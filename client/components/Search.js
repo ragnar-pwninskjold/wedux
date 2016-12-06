@@ -18,7 +18,7 @@ const Search = React.createClass({
 	updateSuggestions: function(input, callback) {
 		$.ajax({
 			method: "GET",
-			url: "http://autocomplete.wunderground.com/aq",
+			url: "https://autocomplete.wunderground.com/aq",
 			data: {query: input},
 			dataType: "jsonp",
 			jsonp: "cb",
