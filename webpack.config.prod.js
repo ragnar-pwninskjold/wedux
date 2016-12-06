@@ -40,8 +40,5 @@ module.exports = {
       loader: 'style-loader!css-loader!'
     }
     ]
-  },
-  node: {
-    fs: "empty"
   }
 };
