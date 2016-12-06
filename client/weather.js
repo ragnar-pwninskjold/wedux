@@ -14,7 +14,7 @@ import store, { history } from './store';
 
 const router = (
 	<Provider store={store}>
-		<Router history={history}>
+		<Router history={hashHistory}>
 			<Route path="/" component={App}>
 			<IndexRoute component={Search}></IndexRoute>
 			<Route path="/weather/:cityid" component={Weather}></Route>
