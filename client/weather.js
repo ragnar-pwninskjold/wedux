@@ -8,7 +8,7 @@ import Weather from './components/Weather.js';
 
 import css from './css/main.css'; //update this for mine
 
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import {Provider} from 'react-redux';
 import store, { history } from './store';
 

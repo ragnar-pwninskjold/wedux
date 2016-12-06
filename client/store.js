@@ -1,6 +1,6 @@
 import { createStore, compose, applyMiddleware } from 'redux';
 import { syncHistoryWithStore } from 'react-router-redux';
-import { browserHistory } from 'react-router';
+import { hashHistory } from 'react-router';
 import thunk from 'redux-thunk';
 
 //get the root reducer
@@ -29,6 +29,6 @@ const store = createStore(rootReducer, persistedState, applyMiddleware(thunk));
 store.subscribe(()=>{
   localStorage.setItem('reduxState', JSON.stringify(store.getState()))
 });
-export const history = syncHistoryWithStore(browserHistory, store);
+export const history = syncHistoryWithStore(hashHistory, store);
 
 export default store;
